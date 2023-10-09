@@ -28,6 +28,13 @@ public class PostController {
     public List<Post> searchPost(@PathVariable String text){
         return srepo.findByText(text);
     }
+    
+  //   @DeleteMapping("/posts/{id}")
+  //   @CrossOrigin
+  // public void deletePost(@PathVariable Integer id){
+  //     srepo.deleteById(id);
+  //     return;
+  // }
 
     @PostMapping("/post") //url is post
     @CrossOrigin
